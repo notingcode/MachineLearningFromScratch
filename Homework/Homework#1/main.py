@@ -23,4 +23,9 @@ except:
 
 if __name__ == '__main__': # Start from main
     #Implement Load and Plot Code here
+    data = pd.read_csv("data.csv")
+
+    plt.scatter(data['Sepal width'], data['Sepal length'])
+    plt.xlabel("Sepal Width (cm)")
+    plt.ylabel("Sepal Length (cm)")
     plt.show() # show plot
